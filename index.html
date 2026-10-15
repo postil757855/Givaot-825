@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גבעות 825 אור האורות (ע"ר) - פורטל חינוך וממשל תאגידי</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        earth: {
+                            50: '#fcfaf8',
+                            100: '#f7f3ee',
+                            200: '#eee5d8',
+                            300: '#e0d1bb',
+                            600: '#8c6d46',
+                            800: '#523e26',
+                            900: '#332616',
+                        },
+                        olive: {
+                            50: '#f6f7f2',
+                            100: '#e8ebe0',
+                            500: '#6b7c41',
+                            700: '#435128',
+                            800: '#333e1e',
+                            900: '#232c13',
+                        },
+                        gold: {
+                            500: '#d4af37',
+                            600: '#b89428',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #232c13 0%, #435128 50%, #332616 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+        .tab-active {
+            border-bottom: 3px solid #6b7c41;
+            color: #435128;
+            font-weight: 700;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col dir-rtl">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <!-- SVG Emblem representing Givaot 825 Or HaOrot Logo -->
+                <div class="relative w-14 h-14 bg-earth-100 rounded-full flex items-center justify-center p-1 border-2 border-olive-500 shadow-sm shrink-0">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <!-- Sun rays -->
+                        <path d="M50 15 L50 5 M30 20 L22 10 M70 20 L78 10 M15 40 L5 38 M85 40 L95 38" stroke="#d4af37" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Sun -->
+                        <circle cx="50" cy="35" r="14" fill="#d4af37"/>
+                        <!-- Scroll Header Top -->
+                        <path d="M20 28 L80 28" stroke="#523e26" stroke-width="4"/>
+                        <circle cx="20" cy="28" r="4" fill="#8c6d46"/>
+                        <circle cx="80" cy="28" r="4" fill="#8c6d46"/>
+                        <!-- Mountain / Hills -->
+                        <path d="M20 65 Q 50 35 80 65 L 80 75 L 20 75 Z" fill="#435128"/>
+                        <path d="M15 75 Q 50 50 85 75 L 85 85 L 15 85 Z" fill="#6b7c41"/>
+                        <!-- Wheat/Olive accents -->
+                        <path d="M10 60 Q 15 45 25 35" fill="none" stroke="#6b7c41" stroke-width="2"/>
+                        <path d="M90 60 Q 85 45 75 35" fill="none" stroke="#d4af37" stroke-width="2"/>
+                        <!-- 825 Text -->
+                        <text x="50" y="62" font-family="sans-serif" font-weight="bold" font-size="16" fill="#ffffff" text-anchor="middle">825</text>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        גבעות 825 אור האורות <span class="text-olive-700 text-sm font-semibold mr-1">(ע"ר)</span>
+                    </h1>
+                    <p class="text-xs sm:text-sm text-slate-500 font-medium">
+                        מספר רישום: 580848455 | מרכז מידע, ממשל תאגידי וקהילה
+                    </p>
+                </div>
+            </div>
+            
+            <nav class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 text-sm font-semibold">
+                <a href="#about" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-olive-700 hover:bg-olive-50 transition">מהי עמותה?</a>
+                <a href="#structure" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-olive-700 hover:bg-olive-50 transition">מבנה העמותה</a>
+                <a href="#beneficiaries" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-olive-700 hover:bg-olive-50 transition">כוחם של מוטבים</a>
+                <a href="#faq" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-olive-700 hover:bg-olive-50 transition">שאלות ותשובות</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block bg-white/10 backdrop-blur-md text-gold-500 text-xs font-bold px-3 py-1 rounded-full border border-white/20 mb-4">
+                ניהול תקין, שקיפות וביטחון קהילתי
+            </span>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+                מחזקים את האדמה, הביטחון והקהילה בכל רחבי ארץ ישראל
+            </h2>
+            <p class="text-lg sm:text-xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed mb-6">
+                למדו כיצד פועל המבנה המשפטי של עמותה בישראל, מדוע ניהול תקין מגן על המשימה שלנו, וכיצד מגורים ונוכחות בשטח כ<strong>מוטבים (Beneficiaries)</strong> יוצרים השפעה ארוכת טווח.
+            </p>
+
+            <!-- Gematria & Nationwide Vision Banner -->
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-gold-500/40 max-w-3xl mx-auto mb-8 text-right space-y-3">
+                <div class="flex items-center gap-2 text-gold-500 font-bold text-base">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span>חזון כלל-ישראלי ומשמעות השם (גימטריה)</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-100 leading-relaxed">
+                    שם העמותה <strong>"אור האורות" (גימטריה 825)</strong> מבטא עיקרון רוחני ופרקטי עמוק: כשמדליקים אור אחד - אורו מקרין ומאיר את הסביבה כולה. למרות שמקור העשייה צמח בגבעה, מטרות העמותה הינן <strong>כלל-ארציות</strong> ומקיפות את <strong>כל מרחבי ארץ ישראל</strong> – מתוך תפיסה כי חיזוק הביטחון, האדמה והתשתיות בנקודה אחת מקרין אור וביטחון על הארץ כולה.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 text-right">
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/10 flex items-center gap-3 w-full sm:w-auto min-w-[200px]">
+                    <i class="fa-solid fa-map-location-dot text-2xl text-gold-500"></i>
+                    <div>
+                        <div class="text-xs text-slate-300">היקף הפעילות</div>
+                        <div class="font-bold text-sm">פריסה בכל רחבי ישראל</div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/10 flex items-center gap-3 w-full sm:w-auto min-w-[200px]">
+                    <i class="fa-solid fa-shield-halved text-2xl text-gold-500"></i>
+                    <div>
+                        <div class="text-xs text-slate-300">משימה מרכזית</div>
+                        <div class="font-bold text-sm">ביטחון וקידום אינטרסים</div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/10 flex items-center gap-3 w-full sm:w-auto min-w-[200px]">
+                    <i class="fa-solid fa-scale-balanced text-2xl text-gold-500"></i>
+                    <div>
+                        <div class="text-xs text-slate-300">תקן משפטי</div>
+                        <div class="font-bold text-sm">כפוף לחוק העמותות</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow space-y-16">
+
+        <!-- SECTION A: WHAT IS AN ISRAELI AMUTA? -->
+        <section id="about" class="scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-olive-700 font-bold uppercase tracking-wider text-xs">חלק א' &bull; היסודות המשפטיים והחזון</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">מהי עמותה רשומה בישראל?</h3>
+                <p class="text-slate-600 mt-2">תאגיד שלא למטרות רווח הפועל תחת חוק העמותות, התשמ"א-1980 למען הציבור בכל הארץ.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Legal Framework Card -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-olive-100 rounded-xl flex items-center justify-center text-olive-700 text-xl font-bold mb-6">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">מסגרת משפטית והיקף ארצי</h4>
+                        <p class="text-slate-600 leading-relaxed mb-4 text-sm sm:text-base">
+                            <strong>עמותה</strong> היא ישות משפטית עצמאית שהוקמה כדי לקדם מטרות ציבוריות ללא חלוקת רווחים. עמותת <strong>גבעות 825 אור האורות</strong> (מספר רשמי: <strong>580848455</strong>) פועלת תחת פיקוחו של רשם העמותות במשרד המשפטים.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            מטרות העמותה אינן מוגבלות לאזור גיאוגרפי יחיד אלא נועדו <strong>לכסות ולשרת את כל רחבי ארץ ישראל</strong>. בדומה למנורה שמפיצה את אורה למרחוק, פעילות העמותה מספקת תשתיות, הגנה וייעוץ לקהילות ולמתיישבים בכל נקודה בארץ.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                        <span><i class="fa-solid fa-file-contract text-olive-500 ml-1"></i> חוק העמותות (1980)</span>
+                        <span><i class="fa-solid fa-globe text-emerald-500 ml-1"></i> פריסה כלל-ארצית</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Accordion for Core Mission Pillars -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 card-shadow flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-4 flex items-center justify-between">
+                            <span>מטרות היסוד של העמותה</span>
+                            <span class="text-xs bg-olive-100 text-olive-800 font-semibold px-2.5 py-1 rounded-full">לחץ להרחבה</span>
+                        </h4>
+                        
+                        <div class="space-y-3" id="mission-accordion">
+                            <!-- Accordion Item 1 -->
+                            <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+                                <button class="accordion-btn w-full p-4 text-right font-semibold text-slate-800 flex justify-between items-center bg-slate-50 hover:bg-slate-100 text-sm sm:text-base">
+                                    <span class="flex items-center gap-3"><i class="fa-solid fa-video text-olive-700"></i> תשתיות אבטחה וביטחון מונע</span>
+                                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+                                </button>
+                                <div class="accordion-content hidden p-4 bg-white text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+                                    מימון והתקנת מצלמות אבטחה היקפיות, תאורה, גדרות ואמצעי תקשורת חירום להגנה על תושבים, נקודות יישוב ומבקרים בכל אזורי הארץ.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+                                <button class="accordion-btn w-full p-4 text-right font-semibold text-slate-800 flex justify-between items-center bg-slate-50 hover:bg-slate-100 text-sm sm:text-base">
+                                    <span class="flex items-center gap-3"><i class="fa-solid fa-wheat-awn text-olive-700"></i> תמיכה חקלאית ושמירה על קרקעות</span>
+                                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+                                </button>
+                                <div class="accordion-content hidden p-4 bg-white text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+                                    סיוע ליוזמות חקלאיות מקומיות, תחזוקת מטעים, ועבודה חקלאית פעילה השומרת על אדמות המדינה ברחבי ישראל ומניעת השתלטות עליהן.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+                                <button class="accordion-btn w-full p-4 text-right font-semibold text-slate-800 flex justify-between items-center bg-slate-50 hover:bg-slate-100 text-sm sm:text-base">
+                                    <span class="flex items-center gap-3"><i class="fa-solid fa-wheat-awn text-olive-700"></i> תמיכה חקלאית ושמירה על קרקעות</span>
+                                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+                                </button>
+                                <div class="accordion-content hidden p-4 bg-white text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+                                    סיוע ליוזמות חקלאיות מקומיות, תחזוקת מטעים, ועבודה חקלאית פעילה השומרת על אדמות מדינה, מונעת השתלטות בלתי חוקית ומשמרת את הסביבה.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 3 -->
+                            <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+                                <button class="accordion-btn w-full p-4 text-right font-semibold text-slate-800 flex justify-between items-center bg-slate-50 hover:bg-slate-100 text-sm sm:text-base">
+                                    <span class="flex items-center gap-3"><i class="fa-solid fa-map-location-dot text-olive-700"></i> תכנון עירוני (תב"ע) וייצוג</span>
+                                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+                                </button>
+                                <div class="accordion-content hidden p-4 bg-white text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+                                    מתן ייעוץ תכנוני, תמיכה בהגשת תוכניות בניין עיר (תב"ע) ועבודה מול הרשויות האזרחיות להסדרת זכויות ההתיישבות והמגורים לטווח ארוך.
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 4 -->
+                            <div class="border border-slate-200 rounded-xl overflow-hidden transition">
+                                <button class="accordion-btn w-full p-4 text-right font-semibold text-slate-800 flex justify-between items-center bg-slate-50 hover:bg-slate-100 text-sm sm:text-base">
+                                    <span class="flex items-center gap-3"><i class="fa-solid fa-handshake text-olive-700"></i> ייעוץ משפטי וגישור קהילתי</span>
+                                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"></i>
+                                </button>
+                                <div class="accordion-content hidden p-4 bg-white text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+                                    אספקת משאבים משפטיים להגנה על הקהילה, ארגון הליכי גישור וגיבוש הסכמות, והבטחה שכל פעולות הקהילה נעשות בתיאום מלא עם הוראות החוק.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION B: GOVERNANCE STRUCTURE -->
+        <section id="structure" class="scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-olive-700 font-bold uppercase tracking-wider text-xs">חלק ב' &bull; חלוקת תפקידים וסמכויות</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">שלשת אורגני היסוד בעמותה</h3>
+                <p class="text-slate-600 mt-2">לפי חוק העמותות, כל עמותה מורכבת משלושה גופים נפרדים להבטחת איזונים, בלמים ומנהל תקין.</p>
+            </div>
+
+            <!-- Tab Navigation for Pillars -->
+            <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
+                <div class="flex border-b border-slate-200 bg-slate-50 overflow-x-auto text-sm sm:text-base">
+                    <button class="pillar-tab flex-1 py-4 px-6 text-center font-bold text-slate-600 hover:text-olive-800 transition tab-active flex items-center justify-center gap-2 min-w-[200px]" onclick="switchPillar('assembly')">
+                        <i class="fa-solid fa-users-rectangle text-olive-600"></i>
+                        <span>1. אסיפה כללית</span>
+                    </button>
+                    <button class="pillar-tab flex-1 py-4 px-6 text-center font-bold text-slate-600 hover:text-olive-800 transition flex items-center justify-center gap-2 min-w-[200px]" onclick="switchPillar('board')">
+                        <i class="fa-solid fa-briefcase text-olive-600"></i>
+                        <span>2. ועד מנהל</span>
+                    </button>
+                    <button class="pillar-tab flex-1 py-4 px-6 text-center font-bold text-slate-600 hover:text-olive-800 transition flex items-center justify-center gap-2 min-w-[200px]" onclick="switchPillar('audit')">
+                        <i class="fa-solid fa-magnifying-glass-chart text-olive-600"></i>
+                        <span>3. ועדת ביקורת</span>
+                    </button>
+                </div>
+
+                <!-- Tab Panels -->
+                <div class="p-6 sm:p-10">
+                    <!-- Panel 1: General Assembly -->
+                    <div id="pillar-assembly" class="pillar-panel space-y-6">
+                        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                            <div>
+                                <span class="text-xs font-bold text-olive-700 uppercase tracking-widest">אורגן עליון</span>
+                                <h4 class="text-2xl font-bold text-slate-900">האסיפה הכללית</h4>
+                                <p class="text-sm text-slate-500">הסמכות העליונה והחוקתית של העמותה</p>
+                            </div>
+                            <span class="px-3 py-1 bg-amber-50 text-amber-800 border border-amber-200 rounded-lg text-xs font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-gavel"></i> בעלי זכות הצבעה וקביעת מדיניות
+                            </span>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h5 class="font-bold text-slate-800 text-sm uppercase tracking-wider text-olive-800 flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-600"></i> תפקידים וסמכויות מרכזיים
+                                </h5>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>בחירת חברי הוועד המנהל וחברי ועדת הביקורת.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>אישור הדוחות הכספיים השנתיים, התקציב ותקנון העמותה.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>סמכות לשנות את מטרות העמותה או לקבל החלטה על פירוקה.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-xs sm:text-sm text-slate-600 space-y-3">
+                                <h5 class="font-bold text-slate-900 flex items-center gap-2">
+                                    <i class="fa-solid fa-triangle-exclamation text-amber-600"></i> כללי חברות
+                                </h5>
+                                <p>
+                                    חברי האסיפה הכללית רשומים בצורה רשמית אצל רשם העמותות ונושאים באחריות משפטית לתקנון. קבלת סיוע מהעמותה או מגורים בשטח <strong>אינם</strong> מחייבים ולא מקנים חברות באסיפה הכללית.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: Management Board -->
+                    <div id="pillar-board" class="pillar-panel hidden space-y-6">
+                        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                            <div>
+                                <span class="text-xs font-bold text-olive-700 uppercase tracking-widest">אורגן מבצע</span>
+                                <h4 class="text-2xl font-bold text-slate-900">הוועד המנהל</h4>
+                                <p class="text-sm text-slate-500">ניהול שוטף והוצאה לפועל של המדיניות</p>
+                            </div>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-800 border border-blue-200 rounded-lg text-xs font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-gears"></i> ניהול ביצועי ותפעולי
+                            </span>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h5 class="font-bold text-slate-800 text-sm uppercase tracking-wider text-olive-800 flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-600"></i> תפקידים וסמכויות מרכזיים
+                                </h5>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>ביצוע החלטות האסיפה הכללית והובלת הפרויקטים בשטח.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>דיון והצבעה על בקשות תמיכה וסיוע ביטחוני וחקלאי לקהילה.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>ניהול חשבונות הבנק, ספקים, קבלנים ודיווחים לרשויות.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-xs sm:text-sm text-slate-600 space-y-3">
+                                <h5 class="font-bold text-slate-900 flex items-center gap-2">
+                                    <i class="fa-solid fa-shield text-olive-600"></i> ניגוד עניינים וקרובי משפחה
+                                </h5>
+                                <p>
+                                    כדי למנוע פסילה של העמותה ע"י רשם העמותות, חל איסור שרוב חברי הוועד יהיו קרובי משפחה מדרגה ראשונה. כמו כן, חבר ועד הנמצא בניגוד עניינים בנושא מסוים חייב להימנע מהשתתפות בהצבעה לגביו.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Audit Committee -->
+                    <div id="pillar-audit" class="pillar-panel hidden space-y-6">
+                        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                            <div>
+                                <span class="text-xs font-bold text-olive-700 uppercase tracking-widest">אורגן מפקח</span>
+                                <h4 class="text-2xl font-bold text-slate-900">ועדת ביקורת</h4>
+                                <p class="text-sm text-slate-500">פיקוח עצמאי על תקינות המנהל והכספים</p>
+                            </div>
+                            <span class="px-3 py-1 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-lg text-xs font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-eye"></i> פיקוח בלתי תלוי
+                            </span>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h5 class="font-bold text-slate-800 text-sm uppercase tracking-wider text-olive-800 flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-600"></i> תפקידים וסמכויות מרכזיים
+                                </h5>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>בדיקת ספרי החשבונות, הפעילות הכספית והתנהלות העמותה.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>הבטחה שנכסי העמותה מיועדים אך ורק לקידום מטרותיה הרשמיות.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-dot text-xs text-olive-500 mt-1"></i>
+                                        <span>הגשת המלצות ודוח ביקורת שנתי לאסיפה הכללית ולרשם העמותות.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-xs sm:text-sm text-slate-600 space-y-3">
+                                <h5 class="font-bold text-slate-900 flex items-center gap-2">
+                                    <i class="fa-solid fa-lock text-slate-700"></i> הפרדה מוחלטת
+                                </h5>
+                                <p>
+                                    חברי ועדת הביקורת <strong>אינם יכולים</strong> לכהן בו זמנית כחברי ועד מנהל. מדובר בגוף מפקח בלבד, שאין לו סמכות ניהולית מבצעת, במטרה לשמור על אובייקטיביות וניהול תקין.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION C: POWER OF BEING A BENEFICIARY -->
+        <section id="beneficiaries" class="scroll-mt-20">
+            <div class="bg-gradient-to-br from-olive-900 via-olive-800 to-earth-900 rounded-3xl text-white p-8 sm:p-12 shadow-xl relative overflow-hidden">
+                <!-- Background decorative element -->
+                <div class="absolute -left-10 -bottom-10 opacity-10 text-white text-9xl pointer-events-none">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <div class="max-w-3xl relative z-10">
+                    <span class="inline-block bg-gold-500/20 text-gold-500 border border-gold-500/30 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                        חלק ג' &bull; יחידת לימוד קהילתית
+                    </span>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
+                        העוצמה שבתפקיד "מוטב / משתתף בקהילה" (Beneficiary)
+                    </h3>
+                    <p class="text-slate-200 text-base sm:text-lg leading-relaxed mb-8">
+                        קיימת תפיסה מוטעית כאילו רק חברי ועד רשמיים משפיעים בשטח. בפועל, <strong>המוטבים והתושבים הם הלב והמהות של מטרות העמותה</strong>.
+                    </p>
+                </div>
+
+                <!-- 3 Pillars of Beneficiary Impact Grid -->
+                <div class="grid md:grid-cols-3 gap-6 relative z-10 mt-6">
+                    <!-- Impact Card 1 -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-500 text-xl font-bold mb-4">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">ביסוס נוכחות ואחיזה</h4>
+                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                המגורים והעשייה בשטח של משפחות ומתנדבים (כמו נטלי, מרי וחברי הקהילה) יוצרים נוכחות יומיומית רצופה. נוכחות זו היא המגן הפיזי השומר על קרקעות המדינה מניסיונות השתלטות.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gold-500 font-medium">
+                            <i class="fa-solid fa-map ml-1"></i> ביסוס רצף היסטורי בשטח
+                        </div>
+                    </div>
+
+                    <!-- Impact Card 2 -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-500 text-xl font-bold mb-4">
+                                <i class="fa-solid fa-landmark"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">תשתית לתכנון (תב"ע)</h4>
+                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                מעורבות בחקלאות ותיעוד היישוב בשטח מספקים את הראיות התכנוניות הנדרשות לאנשי המקצוע כדי להגיש ולדחוף תוכניות מתאר (תב"ע) מול גורמי הממשל.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gold-500 font-medium">
+                            <i class="fa-solid fa-file-shield ml-1"></i> הסדרה אזרחית ותכנונית
+                        </div>
+                    </div>
+
+                    <!-- Impact Card 3 -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-500 text-xl font-bold mb-4">
+                                <i class="fa-solid fa-shield-cat"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">אפס אחריות תאגידית</h4>
+                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                המוטבים נהנים מתשתיות אבטחה, ציוד, ייעוץ משפטי וליווי ללא חשיפה לעול המנהלי, הבירוקרטי והמשפטי המוטל על חברי אורגנים רשמיים בתאגיד.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-white/10 text-xs text-gold-500 font-medium">
+                            <i class="fa-solid fa-user-shield ml-1"></i> הגנה ותמיכה מלאה
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Callout Banner -->
+                <div class="mt-8 bg-black/20 rounded-2xl p-6 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-hand-holding-heart text-3xl text-gold-500 shrink-0"></i>
+                        <p class="text-xs sm:text-sm text-slate-200">
+                            <strong>סיכום:</strong> העמותה קיימת כדי לשרת ולהגן על הקהילה. תפקיד המוטב מעניק עוצמה רבה—הוא מאפשר להתמקד ביישוב הארץ ובביטחון בשטח, בעוד נושאי המשרה מנהלים את התקנון והרגולציה.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION D: INTERACTIVE FAQ & MYTH BUSTER -->
+        <section id="faq" class="scroll-mt-20">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-olive-700 font-bold uppercase tracking-wider text-xs">חלק ד' &bull; שאלות ותשובות</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">מנפצים מיתוסים & שאלות נפוצות</h3>
+                <p class="text-slate-600 mt-2">תשובות ברורות לגבי משאבי העמותה, גבולות גזרה משפטיים ותמיכה קהילתית.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden transition">
+                    <button class="faq-btn w-full p-6 text-right flex justify-between items-center gap-4 font-bold text-slate-900 text-base sm:text-lg hover:bg-slate-50">
+                        <span class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-olive-600"></i>
+                            האם חבר ועד או מוטב יכול להשתמש בכספי העמותה כדי לממן תביעה משפטית אישית מהעבר?
+                        </span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200 shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-slate-50 border-t border-slate-100 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <div class="flex items-start gap-3 bg-red-50 text-red-900 p-4 rounded-xl border border-red-200 mb-3">
+                            <i class="fa-solid fa-ban text-red-600 text-lg mt-0.5"></i>
+                            <div>
+                                <strong>תשובה: חד משמעית לא.</strong> לפי חוק העמותות והנחיות רשם העמותות, נכסי העמותה וכספיה מיועדים אך ורק לקידום מטרות כלליות לתועלת הציבור (כגון אבטחה היקפית, שמירה על אדמות, או תכנון תב"ע קהילתי). חל איסור משפטי חמור להשתמש בכספי עמותה למימון סכסוכים משפטיים פרטיים, אישיים או רטרואקטיביים.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden transition">
+                    <button class="faq-btn w-full p-6 text-right flex justify-between items-center gap-4 font-bold text-slate-900 text-base sm:text-lg hover:bg-slate-50">
+                        <span class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-olive-600"></i>
+                            האם קבלת סיוע ביטחוני או חקלאי מהעמותה הופכת אותי לחבר אסיפה כללית בעל זכות הצבעה?
+                        </span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200 shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-slate-50 border-t border-slate-100 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <div class="flex items-start gap-3 bg-emerald-50 text-emerald-900 p-4 rounded-xl border border-emerald-200 mb-3">
+                            <i class="fa-solid fa-circle-info text-emerald-600 text-lg mt-0.5"></i>
+                            <div>
+                                <strong>תשובה: לא, קבלת סיוע וחברות בעמותה הם שני דברים נפרדים.</strong> קבלת תמיכה מגדירה אותך כ<strong>מוטב (Beneficiary)</strong> מוערך. חברות באסיפה הכללית דורשת הליך קבלה פורמלי ורישום אצל רשם העמותות. ההפרדה הזו מגנה על התושבים מאחריות משפטית ותאגידית, ומאפשרת לעמותה לספק סיוע לכל חבר קהילה הנזקק לכך.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden transition">
+                    <button class="faq-btn w-full p-6 text-right flex justify-between items-center gap-4 font-bold text-slate-900 text-base sm:text-lg hover:bg-slate-50">
+                        <span class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-olive-600"></i>
+                            מדוע הפרדה מבנית וניהול תקין קריטיים כל כך עבור עמותת גבעות 825?
+                        </span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200 shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-slate-50 border-t border-slate-100 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <div class="flex items-start gap-3 bg-blue-50 text-blue-900 p-4 rounded-xl border border-blue-200 mb-3">
+                            <i class="fa-solid fa-shield-halved text-blue-600 text-lg mt-0.5"></i>
+                            <div>
+                                <strong>תשובה: כדי להבטיח את אישור הניהול התקין ולמנוע הקפאת פעילות.</strong> ניהול תקין מול רשם העמותות שומר על אישור ניהול תקין (בתוקף), מאפשר קבלת תמיכות ותרומות, ומבטיח שכל שקל שנאסף מופנה ישירות לביטחון הקהילה ולביסוס ההתיישבות.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden transition">
+                    <button class="faq-btn w-full p-6 text-right flex justify-between items-center gap-4 font-bold text-slate-900 text-base sm:text-lg hover:bg-slate-50">
+                        <span class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-question text-olive-600"></i>
+                            כיצד יכולים תושבים ומשתתפים בקהילה להגיש בקשות לסיוע ביטחוני או חקלאי?
+                        </span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200 shrink-0"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-slate-50 border-t border-slate-100 text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <div class="flex items-start gap-3 bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300 mb-3">
+                            <i class="fa-solid fa-paper-plane text-slate-600 text-lg mt-0.5"></i>
+                            <div>
+                                <strong>תשובה: באמצעות פנייה שקופה לוועד המנהל.</strong> כל תושב או משתתף בקהילה יכול להגיש פנייה מפורטת לגבי צורכי אבטחה או תשתיות בגבעות 825. הוועד המנהל בוחן את הבקשות לפי סדרי עדיפויות בטיחותיים, תקציב זמין והלימה למטרות העמותה.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-earth-900 text-slate-300 py-8 border-t border-earth-800 mt-16 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-olive-700 flex items-center justify-center text-white text-xs font-bold">
+                    825
+                </div>
+                <div>
+                    <p class="font-bold text-white">גבעות 825 אור האורות (ע"ר)</p>
+                    <p class="text-xs text-slate-400">עמותה רשומה מספר 580848455</p>
+                </div>
+            </div>
+            <div class="text-xs text-slate-400 text-center sm:text-left">
+                <p>&copy; גבעות 825 אור האורות. מרכז מידע ולימוד קהילתי.</p>
+                <p class="mt-1 text-slate-500">פועל בהתאם להוראות חוק העמותות, התשמ"א-1980</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Section A Accordion
+            const accordionBtns = document.querySelectorAll('.accordion-btn');
+            accordionBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('.fa-chevron-down');
+                    
+                    const isHidden = content.classList.contains('hidden');
+                    
+                    // Close other items
+                    document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
+                    document.querySelectorAll('.accordion-btn .fa-chevron-down').forEach(i => i.style.transform = 'rotate(0deg)');
+                    
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        if (icon) icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+
+            // Section D FAQ Accordion
+            const faqBtns = document.querySelectorAll('.faq-btn');
+            faqBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('.fa-chevron-down');
+                    
+                    const isHidden = content.classList.contains('hidden');
+                    
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        if (icon) icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        if (icon) icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+
+        // Section B Tab Switcher Function
+        function switchPillar(pillarKey) {
+            // Hide all panels
+            document.querySelectorAll('.pillar-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+            
+            // Remove active classes from tabs
+            document.querySelectorAll('.pillar-tab').forEach(tab => {
+                tab.classList.remove('tab-active');
+                tab.classList.add('text-slate-600');
+            });
+
+            // Show selected panel
+            const activePanel = document.getElementById(`pillar-${pillarKey}`);
+            if (activePanel) {
+                activePanel.classList.remove('hidden');
+            }
+
+            // Highlight active tab
+            const eventTarget = event.currentTarget;
+            if (eventTarget) {
+                eventTarget.classList.add('tab-active');
+                eventTarget.classList.remove('text-slate-600');
+            }
+        }
+    </script>
+</body>
+</html>
